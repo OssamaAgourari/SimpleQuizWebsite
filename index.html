@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse - Space Knowledge Adventure</title>
+    <meta name="description"
+        content="QuizVerse: A space-themed quiz app to test your HTML, CSS, and JavaScript knowledge. Travel through planets and reach the Knowledge Galaxy!">
+    <meta name="keywords" content="quiz app, space quiz, HTML quiz, CSS quiz, JavaScript quiz, web development">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="QuizVerse - Space Quiz Adventure">
+    <meta property="og:description" content="Test your coding knowledge in this interactive space-themed quiz!">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="screen active">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+        <div class="content">
+            <h1>🚀 Welcome to QuizVerse</h1>
+            <p>Embark on an interstellar journey through the Knowledge Galaxy!</p>
+            <button id="start-btn" class="glow-button">Start Mission</button>
+        </div>
+    </div>
+
+    <!-- Quiz Selection Page -->
+    <div id="quiz-selection" class="screen">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="content">
+            <h2>Choose Your Mission</h2>
+            <div class="mission-options">
+                <div class="mission-card" data-quiz="html">
+                    <div class="planet-icon" style="background-color: #e34c26;"></div>
+                    <h3>HTML Planet</h3>
+                    <p>Master the structure of the web</p>
+                </div>
+                <div class="mission-card" data-quiz="css">
+                    <div class="planet-icon" style="background-color: #2965f1;"></div>
+                    <h3>CSS Nebula</h3>
+                    <p>Style your way through space</p>
+                </div>
+                <div class="mission-card" data-quiz="javascript">
+                    <div class="planet-icon" style="background-color: #f0db4f;"></div>
+                    <h3>JavaScript Galaxy</h3>
+                    <p>Bring interactivity to the cosmos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="screen">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="quiz-container">
+            <div class="progress-container">
+                <div class="rocket-progress">
+                    <div class="rocket"></div>
+                    <div class="progress-trail"></div>
+                </div>
+                <div class="planet-indicator">
+                    <span class="current-level">1</span>/<span class="total-levels">5</span>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="comet-icon">☄️</div>
+                <span class="time">30</span>s
+            </div>
+            <div class="question-card">
+                <div class="planet-display"></div>
+                <h2 class="question-text">What is the correct HTML element for the largest heading?</h2>
+                <div class="options">
+                    <button class="option">&lt;heading&gt;</button>
+                    <button class="option">&lt;h6&gt;</button>
+                    <button class="option correct">&lt;h1&gt;</button>
+                    <button class="option">&lt;head&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="screen">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="content">
+            <h2>🌌 Mission Complete!</h2>
+            <div class="rocket-landing">
+                <div class="rocket"></div>
+                <div class="knowledge-galaxy"></div>
+            </div>
+            <div class="stars-rating">
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+            </div>
+            <div class="stats">
+                <p>Correct: <span class="correct-answers">4</span>/<span class="total-questions">5</span></p>
+                <p>Time: <span class="time-taken">1:24</span></p>
+            </div>
+            <div class="action-buttons">
+                <button class="try-again">Try Again</button>
+                <button class="new-mission">Choose New Mission</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-screen" class="screen">
+        <div class="loader">🚀</div>
+        <p>Launching QuizVerse...</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
